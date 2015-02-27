@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D78E72281AA0FB6700DECF1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78E72271AA0FB6700DECF1B /* AppDelegate.swift */; };
 		D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D78E72291AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld */; };
 		D78E722D1AA0FB6700DECF1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78E722C1AA0FB6700DECF1B /* ViewController.swift */; };
 		D78E72301AA0FB6700DECF1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78E722E1AA0FB6700DECF1B /* Main.storyboard */; };
 		D78E72321AA0FB6700DECF1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78E72311AA0FB6700DECF1B /* Images.xcassets */; };
 		D78E72351AA0FB6700DECF1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D78E72331AA0FB6700DECF1B /* LaunchScreen.xib */; };
 		D78E72411AA0FB6700DECF1B /* THPOC_membershipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78E72401AA0FB6700DECF1B /* THPOC_membershipTests.swift */; };
+		D78E724B1AA1164100DECF1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78E72271AA0FB6700DECF1B /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,9 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78E724B1AA1164100DECF1B /* AppDelegate.swift in Sources */,
 				D78E722D1AA0FB6700DECF1B /* ViewController.swift in Sources */,
 				D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */,
-				D78E72281AA0FB6700DECF1B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +409,7 @@
 				D78E72461AA0FB6700DECF1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D78E72471AA0FB6700DECF1B /* Build configuration list for PBXNativeTarget "THPOC_membershipTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				D78E72491AA0FB6700DECF1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
