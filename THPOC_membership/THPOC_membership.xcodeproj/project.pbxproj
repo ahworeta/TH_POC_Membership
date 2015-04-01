@@ -16,6 +16,7 @@
 		D78E72411AA0FB6700DECF1B /* THPOC_membershipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78E72401AA0FB6700DECF1B /* THPOC_membershipTests.swift */; };
 		D78E724B1AA1164100DECF1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78E72271AA0FB6700DECF1B /* AppDelegate.swift */; };
 		D7ADFFE21AB8F5EC0084E812 /* LoginCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADFFE11AB8F5EC0084E812 /* LoginCredential.swift */; };
+		D7DA83DA1ACC6D1900C75672 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA83D91ACC6D1900C75672 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		D78E723F1AA0FB6700DECF1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D78E72401AA0FB6700DECF1B /* THPOC_membershipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THPOC_membershipTests.swift; sourceTree = "<group>"; };
 		D7ADFFE11AB8F5EC0084E812 /* LoginCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCredential.swift; sourceTree = "<group>"; };
+		D7DA83D91ACC6D1900C75672 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				D78E72271AA0FB6700DECF1B /* AppDelegate.swift */,
 				D78E722C1AA0FB6700DECF1B /* ViewController.swift */,
 				D78E722E1AA0FB6700DECF1B /* Main.storyboard */,
+				D7DA83D91ACC6D1900C75672 /* HomeViewController.swift */,
 				D78E72311AA0FB6700DECF1B /* Images.xcassets */,
 				D78E72331AA0FB6700DECF1B /* LaunchScreen.xib */,
 				D78E72291AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld */,
@@ -226,6 +229,7 @@
 				D78E724B1AA1164100DECF1B /* AppDelegate.swift in Sources */,
 				D78E722D1AA0FB6700DECF1B /* ViewController.swift in Sources */,
 				D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */,
+				D7DA83DA1ACC6D1900C75672 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
