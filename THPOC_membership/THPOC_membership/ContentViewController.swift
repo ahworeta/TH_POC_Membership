@@ -1,41 +1,29 @@
 //
-//  ViewController.swift
+//  ContentViewController.swift
 //  THPOC_membership
 //
-//  Created by Dev on 2/27/15.
+//  Created by Dev on 4/2/15.
 //  Copyright (c) 2015 Inflexxion. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController, NSURLConnectionDataDelegate {
+class ContentViewController: UIViewController, NSURLConnectionDataDelegate {
+    
 
-    @IBOutlet weak var userNameFT: UITextField!
-    
-    @IBOutlet weak var pinFT: UITextField!
-    
-    @IBOutlet weak var feedbackLb: UILabel!
+    @IBOutlet weak var ContentIDTF: UITextField!
+    @IBOutlet weak var ContentTitleTF: UITextView!
+    @IBOutlet weak var ContentValueTF: UITextView!
     
     var theConnnection: NSURLConnection?
     var webServiceData:NSMutableData?
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func Login(sender: AnyObject) {
+    @IBAction func Search(sender: AnyObject) {
+        
         self.view.endEditing(true)
         
         
-        var url:String = "http://10.200.20.86/api/mobileservice/844"
+        var url:String = "http://10.200.20.86/api/mobileservice/\(ContentIDTF.text)"
         //url  = "https://itunes.apple.com/search?term=bob&media=music"
         
         let theURL = NSURL(string: url)!
@@ -44,33 +32,13 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         
         theConnnection = NSURLConnection(request: req, delegate: self, startImmediately: true)
         
-        
-        
-        
-        
-        
-        
-        var bm = BusinessManager()
-        var c = LoginCredential(loginUserName: userNameFT.text, loginPin: pinFT.text)
-        var a = bm.Login(c)
-        userNameFT.text = ""
-        pinFT.text = ""
-        
-        if !a {
-            //userNameFT
-            
-            feedbackLb.text = "Wrong credential, try again"
-            return
-        } else {
-            feedbackLb.text = ""
-        }
     }
     
     
     func connection(connection: NSURLConnection, didReceiveResponse response: NSURLResponse) {
         webServiceData = NSMutableData()
     }
-
+    
     
     func connection(connection: NSURLConnection, didReceiveData data: NSData) {
         webServiceData?.appendData(data)
@@ -83,7 +51,9 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         var jsonDict =  NSJSONSerialization.JSONObjectWithData(webServiceData!, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
         
         println("jsonDict = \(jsonDict)")
+        ContentTitleTF.text = jsonDict.valueForKey("ContentName") as NSString
         
+        ContentValueTF.text = jsonDict.valueForKey("ContentValue") as NSString
         
     }
     
@@ -92,6 +62,4 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
     }
     
     
-    
 }
-
