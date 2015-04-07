@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A15946E1AD45FC100145F49 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A15946D1AD45FC100145F49 /* RegisterViewController.swift */; };
 		D707AB511AC1F87300D669E7 /* BusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707AB501AC1F87300D669E7 /* BusinessManager.swift */; };
 		D77BA5D81ACDEE1E0068D14A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA5D71ACDEE1E0068D14A /* ContentViewController.swift */; };
 		D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D78E72291AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A15946D1AD45FC100145F49 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D707AB501AC1F87300D669E7 /* BusinessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessManager.swift; sourceTree = "<group>"; };
 		D77BA5D71ACDEE1E0068D14A /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		D78E72221AA0FB6700DECF1B /* THPOC_membership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THPOC_membership.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 				D78E72271AA0FB6700DECF1B /* AppDelegate.swift */,
 				D78E722C1AA0FB6700DECF1B /* ViewController.swift */,
 				D78E722E1AA0FB6700DECF1B /* Main.storyboard */,
+				6A15946D1AD45FC100145F49 /* RegisterViewController.swift */,
 				D7DA83D91ACC6D1900C75672 /* HomeViewController.swift */,
 				D78E72311AA0FB6700DECF1B /* Images.xcassets */,
 				D78E72331AA0FB6700DECF1B /* LaunchScreen.xib */,
@@ -230,6 +233,7 @@
 				D707AB511AC1F87300D669E7 /* BusinessManager.swift in Sources */,
 				D7ADFFE21AB8F5EC0084E812 /* LoginCredential.swift in Sources */,
 				D78E724B1AA1164100DECF1B /* AppDelegate.swift in Sources */,
+				6A15946E1AD45FC100145F49 /* RegisterViewController.swift in Sources */,
 				D78E722D1AA0FB6700DECF1B /* ViewController.swift in Sources */,
 				D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */,
 				D7DA83DA1ACC6D1900C75672 /* HomeViewController.swift in Sources */,
