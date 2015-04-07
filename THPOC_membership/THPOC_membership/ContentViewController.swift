@@ -51,10 +51,15 @@ class ContentViewController: UIViewController, NSURLConnectionDataDelegate {
         var jsonDict =  NSJSONSerialization.JSONObjectWithData(webServiceData!, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
         
         println("jsonDict = \(jsonDict)")
-        ContentTitleTF.text = jsonDict.valueForKey("ContentName") as NSString
         
-        ContentValueTF.text = jsonDict.valueForKey("ContentValue") as NSString
+        if (jsonDict.valueForKey("ContentName") is NSNull) {
+            ContentTitleTF.text = ""
+            ContentValueTF.text = ""
+        } else {
+            ContentTitleTF.text = jsonDict.valueForKey("ContentName") as NSString
         
+            ContentValueTF.text = jsonDict.valueForKey("ContentValue") as NSString
+        }
     }
     
     func connection(connection: NSURLConnection, didFailWithError error: NSError) {
