@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ContentViewController: UIViewController, NSURLConnectionDataDelegate {
     
@@ -59,6 +60,8 @@ class ContentViewController: UIViewController, NSURLConnectionDataDelegate {
             ContentTitleTF.text = jsonDict.valueForKey("ContentName") as NSString
         
             ContentValueTF.text = jsonDict.valueForKey("ContentValue") as NSString
+            
+            saveContentResult(jsonDict)
         }
     }
     
@@ -66,5 +69,22 @@ class ContentViewController: UIViewController, NSURLConnectionDataDelegate {
         println("connection failed \(error.description))")
     }
     
+    
+    func saveContentResult(jsonDict:NSDictionary){
+        
+        let theAppDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        
+        let manObjContext:NSManagedObjectContext = theAppDelegate.managedObjectContext!
+        
+        var newContentResult:ContentResult = NSEntityDescription.insertNewObjectForEntityForName("ContentResult", inManagedObjectContext: manObjContext) as ContentResult
+        
+        newContentResult.title = jsonDict.valueForKey("ContentName") as NSString
+        newContentResult.value = jsonDict.valueForKey("ContentValue") as NSString
+        
+        println("New object created: \(newContentResult.description)")
+        
+        manObjContext.save(nil)
+        
+    }
     
 }

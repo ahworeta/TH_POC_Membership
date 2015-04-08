@@ -64,7 +64,7 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         } else {
             feedbackLb.text = ""
             
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ContentSearch") as? UIViewController
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SearchNavController") as? UIViewController
             
             self.presentViewController(vc!, animated: true, completion: nil)
             
