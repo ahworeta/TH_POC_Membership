@@ -10,7 +10,13 @@
 #define THPOC_membership_StringEncryption_h
 #endif
 
-@interface StringEncryption1 : NSObject
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
+#import <Foundation/Foundation.h>
+
+
+
+@interface StringEncryption : NSObject
 
 -  (NSData *)encrypt:(NSData *)plainText key:(NSString *)key iv:(NSString *)iv;
 -  (NSData *)decrypt:(NSData *)encryptedText key:(NSString *)key iv:(NSString *)iv;

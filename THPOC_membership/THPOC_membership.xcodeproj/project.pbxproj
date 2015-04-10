@@ -35,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		6A15946D1AD45FC100145F49 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9F38BFFF1AD865030052D7D6 /* THPOC_membership-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THPOC_membership-Bridging-Header.h"; sourceTree = "<group>"; };
+		9F38C0001AD866480052D7D6 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		9F5AF9B61AD83D4D00D82D83 /* CryptLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptLib.m; sourceTree = "<group>"; };
 		9F5AF9B81AD83E5D00D82D83 /* StringEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringEncryption.h; sourceTree = "<group>"; };
 		9F5AF9BA1AD83F9400D82D83 /* MobileCrypoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCrypoUtil.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				9F5AF9B61AD83D4D00D82D83 /* CryptLib.m */,
 				9F5AF9B81AD83E5D00D82D83 /* StringEncryption.h */,
 				9F5AF9BA1AD83F9400D82D83 /* MobileCrypoUtil.swift */,
+				9F38C0001AD866480052D7D6 /* NSData+Base64.h */,
 			);
 			name = CryptoUtil;
 			sourceTree = "<group>";
@@ -86,6 +89,7 @@
 		D78E72191AA0FB6700DECF1B = {
 			isa = PBXGroup;
 			children = (
+				9F38BFFF1AD865030052D7D6 /* THPOC_membership-Bridging-Header.h */,
 				D78E72241AA0FB6700DECF1B /* THPOC_membership */,
 				D78E723D1AA0FB6700DECF1B /* THPOC_membershipTests */,
 				D78E72231AA0FB6700DECF1B /* Products */,
@@ -331,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -367,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -382,7 +386,7 @@
 				INFOPLIST_FILE = THPOC_membership/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Allen/GitHub/TH_POC_Membership/THPOC_membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Allen/Documents/GitHub/TH_POC_Membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -395,7 +399,7 @@
 				INFOPLIST_FILE = THPOC_membership/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Allen/GitHub/TH_POC_Membership/THPOC_membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Allen/Documents/GitHub/TH_POC_Membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
 			};
 			name = Release;
 		};

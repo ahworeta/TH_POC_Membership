@@ -34,8 +34,10 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
     @IBAction func Login(sender: AnyObject) {
         self.view.endEditing(true)
         
+        let v = MobileCrypoUtil()
+        let token = v.generateSecurityToken();  // test for generating mobile security token
         
-        var url:String = "http://10.200.20.86/api/mobileservice/844"
+        var url:String = "http://10.200.20.86/api/mobileservice/decryptString?encryptedvalue=\(token)"
         //url  = "https://itunes.apple.com/search?term=bob&media=music"
         
         let theURL = NSURL(string: url)!
@@ -43,12 +45,7 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         var req:NSURLRequest = NSURLRequest(URL: theURL)
         
         theConnnection = NSURLConnection(request: req, delegate: self, startImmediately: true)
-        
-        
-        
-        
-        
-        
+       
         
         var bm = BusinessManager()
         var c = LoginCredential(loginUserName: userNameFT.text, loginPin: pinFT.text)
@@ -85,9 +82,9 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         let JsonStr = NSString(data: webServiceData!, encoding: NSUTF8StringEncoding)
         println("json = \(JsonStr)")
         
-        var jsonDict =  NSJSONSerialization.JSONObjectWithData(webServiceData!, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
+        //var jsonDict =  NSJSONSerialization.JSONObjectWithData(webServiceData!, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
         
-        println("jsonDict = \(jsonDict)")
+        //println("jsonDict = \(jsonDict)")
         
         
     }

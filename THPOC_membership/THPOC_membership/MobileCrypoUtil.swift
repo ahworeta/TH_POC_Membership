@@ -13,10 +13,7 @@ class MobileCrypoUtil{
     
     func generateSecurityToken() ->NSString {
         
-        //var x:StringE
-        
-        
-        return ""
+        return getEncryptedData("abebe")
         
     }
     
@@ -25,17 +22,17 @@ class MobileCrypoUtil{
     }
     
    
-    /*
-    func getEncryptedData()->String
+
+    func getEncryptedData(plainText: NSString)->String
     {
        
-        var instanceOfStringEncryption :StringEncryption = StringEncryption()
+       var instanceOfStringEncryption:StringEncryption = StringEncryption()
         
         let secretKey:NSString = "my secret key"
         
         
         
-        var key = instanceOfStringEncryption.sha256(secretKey, length: 32)
+        var key = instanceOfStringEncryption.sha256(secretKey, length: 31)
         
         println("Key: \(key)")
         
@@ -57,29 +54,26 @@ class MobileCrypoUtil{
         
         //let base64Decoded:NSString = NSString(data: iv, encoding: NSUTF8StringEncoding)!
         
-        let plainText: NSString = inputTF.text
-        
         let plainData = (plainText as NSString).dataUsingEncoding(NSUTF8StringEncoding)
         
         println("plain data: \(plainData)")
         
-        //let plainText:NSData = NSData(base64EncodedString: "abebe", options: <#NSDataBase64DecodingOptions#>)
+        var encryptedData:NSData = instanceOfStringEncryption.encrypt(plainData, key: key, iv: base64Decoded)
+        let base64String = encryptedData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.allZeros)
         
-        var encryptedString:NSData = instanceOfStringEncryption.encrypt(plainData, key: key, iv: base64Decoded)
+        //let encryptedDataString = NSString(data: encryptedString, encoding: UInt())
         
-        let encryptedDataString = NSString(data: encryptedString, encoding: UInt())
+        println("Encrypted string: \(base64String)")
         
-        println("Encrypted string: \(encryptedDataString)")
-        
-        var decryptedData:NSData = instanceOfStringEncryption.decrypt(encryptedString, key: key, iv: base64Decoded)
+        var decryptedData:NSData = instanceOfStringEncryption.decrypt(encryptedData, key: key, iv: base64Decoded)
         
         let decryptedDataString = NSString(data: decryptedData, encoding: UInt())
         
         println("Decrypted: \(decryptedDataString)")
         
-        return encryptedDataString!
+        return base64String
     }
-*/
+
    
 }
     
