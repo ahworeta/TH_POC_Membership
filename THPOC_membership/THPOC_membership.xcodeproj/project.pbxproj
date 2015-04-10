@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6A15946E1AD45FC100145F49 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A15946D1AD45FC100145F49 /* RegisterViewController.swift */; };
+		9F5AF9B71AD83D4D00D82D83 /* CryptLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5AF9B61AD83D4D00D82D83 /* CryptLib.m */; };
+		9F5AF9BB1AD83F9400D82D83 /* MobileCrypoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5AF9BA1AD83F9400D82D83 /* MobileCrypoUtil.swift */; };
 		D707AB511AC1F87300D669E7 /* BusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707AB501AC1F87300D669E7 /* BusinessManager.swift */; };
 		D77BA5D81ACDEE1E0068D14A /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA5D71ACDEE1E0068D14A /* ContentViewController.swift */; };
 		D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D78E72291AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld */; };
@@ -33,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		6A15946D1AD45FC100145F49 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9F5AF9B61AD83D4D00D82D83 /* CryptLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptLib.m; sourceTree = "<group>"; };
+		9F5AF9B81AD83E5D00D82D83 /* StringEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringEncryption.h; sourceTree = "<group>"; };
+		9F5AF9BA1AD83F9400D82D83 /* MobileCrypoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCrypoUtil.swift; sourceTree = "<group>"; };
 		D707AB501AC1F87300D669E7 /* BusinessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessManager.swift; sourceTree = "<group>"; };
 		D77BA5D71ACDEE1E0068D14A /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		D78E72221AA0FB6700DECF1B /* THPOC_membership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THPOC_membership.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F5AF9B41AD83D0600D82D83 /* CryptoUtil */ = {
+			isa = PBXGroup;
+			children = (
+				9F5AF9B61AD83D4D00D82D83 /* CryptLib.m */,
+				9F5AF9B81AD83E5D00D82D83 /* StringEncryption.h */,
+				9F5AF9BA1AD83F9400D82D83 /* MobileCrypoUtil.swift */,
+			);
+			name = CryptoUtil;
+			sourceTree = "<group>";
+		};
 		D78E72191AA0FB6700DECF1B = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,7 @@
 		D78E72241AA0FB6700DECF1B /* THPOC_membership */ = {
 			isa = PBXGroup;
 			children = (
+				9F5AF9B41AD83D0600D82D83 /* CryptoUtil */,
 				D78E72271AA0FB6700DECF1B /* AppDelegate.swift */,
 				D78E722C1AA0FB6700DECF1B /* ViewController.swift */,
 				D78E722E1AA0FB6700DECF1B /* Main.storyboard */,
@@ -235,7 +251,9 @@
 				D78E724B1AA1164100DECF1B /* AppDelegate.swift in Sources */,
 				6A15946E1AD45FC100145F49 /* RegisterViewController.swift in Sources */,
 				D78E722D1AA0FB6700DECF1B /* ViewController.swift in Sources */,
+				9F5AF9BB1AD83F9400D82D83 /* MobileCrypoUtil.swift in Sources */,
 				D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */,
+				9F5AF9B71AD83D4D00D82D83 /* CryptLib.m in Sources */,
 				D7DA83DA1ACC6D1900C75672 /* HomeViewController.swift in Sources */,
 				D77BA5D81ACDEE1E0068D14A /* ContentViewController.swift in Sources */,
 			);
@@ -360,9 +378,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = THPOC_membership/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Allen/GitHub/TH_POC_Membership/THPOC_membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -370,9 +391,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = THPOC_membership/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Allen/GitHub/TH_POC_Membership/THPOC_membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
 			};
 			name = Release;
 		};

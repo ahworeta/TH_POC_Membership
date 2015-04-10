@@ -23,7 +23,7 @@ class ContentViewController: UIViewController, NSURLConnectionDataDelegate {
         self.view.endEditing(true)
         
         
-        var url:String = "http://10.200.20.86/api/mobileservice/\(ContentIDTF.text)"
+        var url:String = "http://10.200.20.86/api/mobileservice/getContent/\(ContentIDTF.text)"
         //url  = "https://itunes.apple.com/search?term=bob&media=music"
         
         let theURL = NSURL(string: url)!
