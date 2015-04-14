@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6A15946E1AD45FC100145F49 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A15946D1AD45FC100145F49 /* RegisterViewController.swift */; };
+		9F38C0061AD873F30052D7D6 /* MobileActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38C0051AD873F30052D7D6 /* MobileActor.swift */; };
 		9F5AF9B71AD83D4D00D82D83 /* CryptLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5AF9B61AD83D4D00D82D83 /* CryptLib.m */; };
 		9F5AF9BB1AD83F9400D82D83 /* MobileCrypoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5AF9BA1AD83F9400D82D83 /* MobileCrypoUtil.swift */; };
 		D707AB511AC1F87300D669E7 /* BusinessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707AB501AC1F87300D669E7 /* BusinessManager.swift */; };
@@ -37,6 +38,7 @@
 		6A15946D1AD45FC100145F49 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9F38BFFF1AD865030052D7D6 /* THPOC_membership-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "THPOC_membership-Bridging-Header.h"; sourceTree = "<group>"; };
 		9F38C0001AD866480052D7D6 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		9F38C0051AD873F30052D7D6 /* MobileActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileActor.swift; sourceTree = "<group>"; };
 		9F5AF9B61AD83D4D00D82D83 /* CryptLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptLib.m; sourceTree = "<group>"; };
 		9F5AF9B81AD83E5D00D82D83 /* StringEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringEncryption.h; sourceTree = "<group>"; };
 		9F5AF9BA1AD83F9400D82D83 /* MobileCrypoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCrypoUtil.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F38C0041AD873AD0052D7D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F38C0051AD873F30052D7D6 /* MobileActor.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		9F5AF9B41AD83D0600D82D83 /* CryptoUtil */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +118,7 @@
 		D78E72241AA0FB6700DECF1B /* THPOC_membership */ = {
 			isa = PBXGroup;
 			children = (
+				9F38C0041AD873AD0052D7D6 /* Model */,
 				9F5AF9B41AD83D0600D82D83 /* CryptoUtil */,
 				D78E72271AA0FB6700DECF1B /* AppDelegate.swift */,
 				D78E722C1AA0FB6700DECF1B /* ViewController.swift */,
@@ -256,6 +267,7 @@
 				6A15946E1AD45FC100145F49 /* RegisterViewController.swift in Sources */,
 				D78E722D1AA0FB6700DECF1B /* ViewController.swift in Sources */,
 				9F5AF9BB1AD83F9400D82D83 /* MobileCrypoUtil.swift in Sources */,
+				9F38C0061AD873F30052D7D6 /* MobileActor.swift in Sources */,
 				D78E722B1AA0FB6700DECF1B /* THPOC_membership.xcdatamodeld in Sources */,
 				9F5AF9B71AD83D4D00D82D83 /* CryptLib.m in Sources */,
 				D7DA83DA1ACC6D1900C75672 /* HomeViewController.swift in Sources */,

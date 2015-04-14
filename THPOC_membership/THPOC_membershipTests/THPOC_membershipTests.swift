@@ -32,5 +32,11 @@ class THPOC_membershipTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    func testGenerateSecurityToken() {
+        let plaintxt = "abebe"
+       // let mCryptoUtil = MobileCrypoUtil()
+        //var aa = mCryptoUtil.generateSecurityToken()
+        
+    }
     
 }

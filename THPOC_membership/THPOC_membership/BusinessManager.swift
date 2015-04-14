@@ -23,4 +23,6 @@ class BusinessManager
         return false
         
     }
+    
+   // func register(req: RegistrationRequest) -
 }
