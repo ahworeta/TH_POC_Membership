@@ -10,35 +10,35 @@ import Foundation
 
 class MobileActor {
     
-    var _deviceId: NSString!
-    var _membershipId: NSString?
-    var _securityToken: NSString!
-    var _domainId: NSString!
+    var DeviceId: NSString!
+    var MembershipId: NSString?
+    var SecurityToken: NSString!
+    var DomainId: NSString!
 
-    init(deviceId:NSString, membershipId:NSString, securityToken:NSString, domainId:NSString)
+    init(_deviceId:NSString, _membershipId:NSString, _securityToken:NSString, _domainId:NSString)
     {
-        _deviceId = deviceId
-        _membershipId = membershipId
-        _securityToken = securityToken
-        _domainId = domainId
+        DeviceId = _deviceId
+        MembershipId = _membershipId
+        SecurityToken = _securityToken
+        DomainId = _domainId
     }
 }
 
 class MobileRequestBase {
-    var _actor: MobileActor!
+    var Actor: MobileActor!
     
     init(actor:MobileActor){
-        _actor = actor
+        Actor = actor
     }
 }
 
 class RegistrationRequest : MobileRequestBase {
-    var _email: NSString!
-    var _password: NSString!
+    var Email: NSString!
+    var Password: NSString!
     
-    init(actor: MobileActor, email: NSString, password:NSString){
+    init(actor: MobileActor, _email: NSString, _password:NSString){
         super.init(actor: actor)
-        _email = email
-        _password = password
+        Email = _email
+        Password = _password
     }
 }
