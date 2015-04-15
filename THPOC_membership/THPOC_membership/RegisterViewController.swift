@@ -54,7 +54,8 @@ class RegisterViewController: UIViewController, NSURLConnectionDataDelegate {
             return
         }
         
-        let parametersString = "email=\(regReq.Email)&password=\(regReq.Password)&actor=\(actor)"
+        
+        let parametersString = "email=\(regReq.Email)&password=\(regReq.Password)&token=\(actor.SecurityToken)&deviceId=\(actor.DeviceId)&domainId=\(actor.DomainId)&membershipId=\(actor.MembershipId)"
         
         var url:String = "http://10.200.20.86/api/mobileservice/Register?\(parametersString)"
         
