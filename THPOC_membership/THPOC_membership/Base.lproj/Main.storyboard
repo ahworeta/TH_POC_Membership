@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qhq-cg-7VA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="qhq-cg-7VA">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="top" id="pzk-LW-Wst"/>
                         <viewControllerLayoutGuide type="bottom" id="NiS-if-smd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -80,6 +80,9 @@
                             <constraint firstAttribute="centerX" secondItem="e3y-fF-Ygf" secondAttribute="centerX" constant="-8" id="t1B-SE-Fje"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aQX-rm-rNw" secondAttribute="trailing" constant="20" id="ySS-63-NuP"/>
                         </constraints>
+                        <connections>
+                            <action selector="dismissKB:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iZz-YX-lln"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="TH POC" id="kJl-4a-eob">
                         <barButtonItem key="backBarButtonItem" title="Login" id="ucl-3Y-Cbq"/>
@@ -103,7 +106,7 @@
                         <viewControllerLayoutGuide type="top" id="T4I-K3-8Rd"/>
                         <viewControllerLayoutGuide type="bottom" id="oA7-b3-QBT"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Scr-ms-1su">
+                    <view key="view" contentMode="scaleToFill" id="Scr-ms-1su" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -166,6 +169,9 @@
                             <constraint firstItem="eko-ca-0bx" firstAttribute="trailing" secondItem="Scr-ms-1su" secondAttribute="trailingMargin" id="pL0-dS-K9D"/>
                             <constraint firstItem="UOK-tO-azQ" firstAttribute="trailing" secondItem="Scr-ms-1su" secondAttribute="trailingMargin" id="xIH-Sy-yYZ"/>
                         </constraints>
+                        <connections>
+                            <action selector="dismissKB:" destination="MeC-b7-Wja" eventType="touchUpInside" id="c6X-oW-q94"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Register" id="ZDU-Ko-6pW"/>
                     <connections>
@@ -186,7 +192,7 @@
                         <viewControllerLayoutGuide type="top" id="0gc-6P-aTn"/>
                         <viewControllerLayoutGuide type="bottom" id="4bL-A1-ph6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XxZ-nU-idQ">
+                    <view key="view" contentMode="scaleToFill" id="XxZ-nU-idQ" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

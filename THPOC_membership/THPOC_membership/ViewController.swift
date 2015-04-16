@@ -132,5 +132,9 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         
     }
     
+    @IBAction func  dismissKB(sender:AnyObject)
+    {
+        self.view.endEditing(true)
+    }
 }
 

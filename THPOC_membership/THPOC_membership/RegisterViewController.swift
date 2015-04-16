@@ -107,4 +107,8 @@ class RegisterViewController: UIViewController, NSURLConnectionDataDelegate {
         self.presentViewController(myAlert, animated: true, completion: nil)
     }
     
+    @IBAction func  dismissKB(sender:AnyObject)
+    {
+        self.view.endEditing(true)
+    }
 }
