@@ -67,4 +67,11 @@ class ContentViewController: UIViewController, NSURLConnectionDataDelegate {
     }
     
     
+    @IBAction func Logout(sender: AnyObject) {
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("THPOC_Login") as? UIViewController
+        
+        self.presentViewController(vc!, animated: true, completion: nil)
+        
+    }
 }
