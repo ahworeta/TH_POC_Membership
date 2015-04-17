@@ -34,6 +34,8 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         
         super.viewDidLoad()
         
+        feedbackLb.font = UIFont(name: "Helvetica", size: 12.5)
+        
         // Do any additional setup after loading the view, typically from a nib.
         
     }
