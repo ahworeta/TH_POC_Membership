@@ -400,7 +400,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dev/Documents/iOS Projects/TH_POC_Membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "THPOC_membership-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -415,7 +415,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/dev/Documents/iOS Projects/TH_POC_Membership/THPOC_membership/THPOC_membership-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "THPOC_membership-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
