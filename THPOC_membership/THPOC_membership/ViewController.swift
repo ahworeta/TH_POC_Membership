@@ -55,6 +55,13 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
         let userEmail = userNameFT.text
         
         let userPassword = pinFT.text
+        
+        if(userEmail.isEmpty || userPassword.isEmpty)
+        {
+            displayAlertMessage("All fields are required.")
+            return
+        }
+        
         let parametersString = "email=\(userEmail)&password=\(userPassword)"
         var url:String = "http://10.200.20.86/api/mobileservice/Login?\(parametersString)"
         
@@ -137,6 +144,13 @@ class ViewController: UIViewController, NSURLConnectionDataDelegate {
     @IBAction func  dismissKB(sender:AnyObject)
     {
         self.view.endEditing(true)
+    }
+    func displayAlertMessage(userMessage:String)
+    {
+        var myAlert = UIAlertController(title: "Message", message: userMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil)
+        myAlert.addAction(okAction)
+        self.presentViewController(myAlert, animated: true, completion: nil)
     }
 }
 
